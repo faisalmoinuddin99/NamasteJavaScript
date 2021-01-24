@@ -1,15 +1,11 @@
 /*
-1. Javascript is a Synchronous Single-Threaded Language.
-2. Single-Threaded means JavaScript Excute one line or one command at a time.
-3. And when we say Synchronous Single-Threaded that means executing one command at a time and in a specific order.
+Introduction to Hoisting in JS
 */
 
-var n = 2 
 
-function square(num) {
-    var ans = num * num
-    return ans
+var x = 7
+function getName(){
+    console.log("Hello");
 }
-
-var squrareOfTwo = square(n)
-var squrareOfFour = square(4)
+getName() // Hello
+console.log(x); // 7
