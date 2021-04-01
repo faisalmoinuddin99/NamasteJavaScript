@@ -1,20 +1,17 @@
-var num = 2;
 
-function square(n) {
-    var ans = n * n
+/*
+Defination of Hositing: Hoisting is a phenomenon in JS by which you can access variables and functions,
+even before you have iniatized it or you have put some value in it.
+*/
+console.log(x); // undefined
+get_Name() // [Function: get_Name]
+console.log(get_Name); // Hello
+var x  = 7
 
-    function addition(n) {
-        var add = n + n
+function get_Name(){
+    console.log("Hello");
 
-        return add
-    }
-    
-    var a = addition(n)
-    return ans + a
 }
 
-var square2 = square(num)
-var square4 = square(4)
+console.log(x); // 7
 
-console.log(square2);
-console.log(square4);
