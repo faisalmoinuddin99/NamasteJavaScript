@@ -1,15 +1,20 @@
-/*
-Introduction to Hoisting in JS
--------------------------------
+var num = 2;
 
-Hositing is a phenomenon in Javascript by which you can access variables and functions, even before you have initialized it or you have put some value in it. 
-*/
+function square(n) {
+    var ans = n * n
 
-getName() // Hello
-console.log(x); // undefined
-console.log(getName);
+    function addition(n) {
+        var add = n + n
 
-var x = 7
-function getName(){
-    console.log("Hello");
+        return add
+    }
+    
+    var a = addition(n)
+    return ans + a
 }
+
+var square2 = square(num)
+var square4 = square(4)
+
+console.log(square2);
+console.log(square4);
