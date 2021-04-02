@@ -1,20 +1,29 @@
-greet() // Good Morning !!!
-console.log(getName); // undefined
-console.log(printHello); // undefined
+/*
+Introduction - Function Invocation and Variable Environment in JS
+*/
 
-var getName = () => {
-    console.log("Namaste JavaScript");
+// How functions work
+
+var  x = 1
+
+a()
+b()
+
+console.log(x);
+
+function a() {
+    var x = 10
+    console.log(x);
 }
 
-function greet(){
-    console.log("Good Morning !!!");
+function b() {
+    var x = 100
+    console.log(x);
 }
 
-
-var printHello = function() {
-    console.log("Hello world...");
-}
-
-
-getName()
-printHello()
+/*
+Output: 
+10
+100
+1
+*/
