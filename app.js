@@ -1,17 +1,20 @@
+greet() // Good Morning !!!
+console.log(getName); // undefined
+console.log(printHello); // undefined
 
-/*
-Defination of Hositing: Hoisting is a phenomenon in JS by which you can access variables and functions,
-even before you have iniatized it or you have put some value in it.
-*/
-console.log(x); // undefined
-get_Name() // [Function: get_Name]
-console.log(get_Name); // Hello
-var x  = 7
-
-function get_Name(){
-    console.log("Hello");
-
+var getName = () => {
+    console.log("Namaste JavaScript");
 }
 
-console.log(x); // 7
+function greet(){
+    console.log("Good Morning !!!");
+}
 
+
+var printHello = function() {
+    console.log("Hello world...");
+}
+
+
+getName()
+printHello()
