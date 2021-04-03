@@ -1,19 +1,17 @@
-/*
-Scope and Lexical Environment
-*/
-function a(){
+function a(){ // its lexical parent is global
+    var b = 10
 
-    var b = 10 // locally available for function a()
-    c()
+    c() 
+    function c(){ // its lexical parent is a
+        console.log(b); // 10
 
-    function c(){
-       
+        d()
+
+        function d() { // its lexical parent is c
+           // b = 20
+            console.log(b); // 20
+        }
     }
-
-
-  
 }
 
 a()
-console.log(b); // b not defiend
-
