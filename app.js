@@ -1,29 +1,12 @@
-/*
-Introduction - Function Invocation and Variable Environment in JS
+/*Introduction to undefined in JavaScript
 */
 
-// How functions work
 
-var  x = 1
-
-a()
-b()
-
-console.log(x);
-
-function a() {
-    var x = 10
-    console.log(x);
-}
-
-function b() {
-    var x = 100
-    console.log(x);
-}
-
-/*
-Output: 
-10
-100
-1
+/* 
+Theory : Undefiend is like a PLACEHOLDER which is placed in the memory
 */
+console.log(x); // undefined
+
+var x  = 10 
+
+console.log(x); // 10
