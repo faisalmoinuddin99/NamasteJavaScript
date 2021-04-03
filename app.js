@@ -1,12 +1,16 @@
-/*Introduction to undefined in JavaScript
+/*
+Javascript is a loosly typed Programming language
 */
 
+var a = "Hello Js"
 
-/* 
-Theory : Undefiend is like a PLACEHOLDER which is placed in the memory
-*/
-console.log(x); // undefined
+console.log(typeof(a)); // string
+console.log(a); // Hello js
 
-var x  = 10 
+ a = 10
 
-console.log(x); // 10
+console.log(typeof(a)); // number
+console.log(a); // 10
+
+// this the example of loosly typed language
+
