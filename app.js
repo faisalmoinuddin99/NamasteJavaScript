@@ -1,16 +1,15 @@
 /*
-Javascript is a loosly typed Programming language
+Scope and Lexical Environment
 */
+a()
 
-var a = "Hello Js"
 
-console.log(typeof(a)); // string
-console.log(a); // Hello js
+function a() {
+    console.log(b); // undefined
 
- a = 10
+}
 
-console.log(typeof(a)); // number
-console.log(a); // 10
+// Global Scope
+var b = 10
 
-// this the example of loosly typed language
 
