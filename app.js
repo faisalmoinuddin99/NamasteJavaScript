@@ -1,19 +1,27 @@
-console.log(x); // undefined 
-//console.log(a); // ReferenceError: Cannot access 'a' before initialization
+console.log(a); // ReferenceError: Cannot access 'a' before initialization --> In Temporal Dead Zone
 
-var x = 10 // created inside global
-let a  = 20 // created inside Script
+let a = 100
+var b = 200
 
-console.log(a);
-
+let greeting = () => {
+    console.log("hello");
+}
 /*
-NOTE: # let and const allocate memory bt not in Global space
+Scope:
 
-# They allocate memory in spreate memory location called script
+Script
+a: undefined
 
-# But in case of var the memory allocation happends in Global Space
 
-# Thats the reason you were facing ReferenceError: Cannot access 'a' before initialization
+Global               Window
 
-# You have to perform declaration in let and const variables before accessing it
+b: undefined
+
+
+Note: 
+# Temporal Dead Zone is a time since when this let variable was hoisted and till its initialied some value
+
+# The time between hoisitng and till its initialized some valuee its called Temporal Dead Zone
+
+# So the phase from Hoisitng tilll it assign or get some value that phase is known as Tempooral Deead Zone
 */
