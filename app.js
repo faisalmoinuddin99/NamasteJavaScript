@@ -1,5 +1,11 @@
 /*
-How to avoid Temporal Dead Zone ?
+What is a BLOCK in JS ?
 
-Always put  your Declaration and initialization on the top of your actual logic
+-> 1. BLOCK is also known as Compound Statements
+
+2. A Block is used to combined multiple JS statements into Group
 */
+
+{
+
+}
