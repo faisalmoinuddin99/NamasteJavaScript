@@ -1,18 +1,19 @@
-{
-    var a = 10
-    let b = 80
-    const pi = 3.14
+let isAlive = true
 
-    console.log(a);
-    console.log(b);
-    console.log(pi);
+if(isAlive){
+
+    wearMask()
+    doHandWash()
+    
 }
 
-console.log(a);
-console.log(b); // b is not defined
-console.log(pi);
+function wearMask(){
+    console.log("wear the mask  😷 ");
+}
 
-/*
- * NOTE: A Block is used to combined multiple JavaScript statement into
-One Group 
- */
+function doHandWash(){
+    console.log("Do Hand Wash  🧴🤲");
+}
+/* 
+NOTE: Block which is wrapping up our multiple statments, so that we can use it in a place where JS expects one statements
+*/
