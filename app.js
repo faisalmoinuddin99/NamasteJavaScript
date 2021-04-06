@@ -1,22 +1,13 @@
 /*
-Does Shadow happens with let and const ?
+Shadowing is not only the concept oof block, it behaves thhe same way even in the function also 
 */
 
-let a = 10 // hoisted in Script memory location
-{
-    let a = 100 // hoisted in block memory location
-    var b = 20 // hoisted in global memory location
-    const c = 7 // hoisted in block memory location
+const c = 100 // created in script memory location
 
-    console.log(a); // 100
-    console.log(b); // 20
-    console.log(c); // 7
+function x(){
+    const c = 30 // created in local memory of x
+    console.log(c); // 30
 }
 
-console.log(a); // 10
-
-
-/*
-
-And this is what is known as shadowing
-*/
+console.log(c); // 100
+x()
