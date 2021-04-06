@@ -1,15 +1,22 @@
-var a = 10 // global scope
+/*
+Does Shadow happens with let and const ?
+*/
+
+let a = 10 // hoisted in Script memory location
 {
-    var a = 100 // Global and it ovrride/shawdow the previous value of a
-    let b = 2
-    const c = 9
+    let a = 100 // hoisted in block memory location
+    var b = 20 // hoisted in global memory location
+    const c = 7 // hoisted in block memory location
 
     console.log(a); // 100
-    console.log(b); // 2
-    console.log(c); // 9
+    console.log(b); // 20
+    console.log(c); // 7
 }
-console.log(a); // 100
+
+console.log(a); // 10
+
 
 /*
-It modifies the a to 100
+
+And this is what is known as shadowing
 */
