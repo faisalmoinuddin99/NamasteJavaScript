@@ -1,13 +1,23 @@
-/*
-Shadowing is not only the concept oof block, it behaves thhe same way even in the function also 
-*/
-
-const c = 100 // created in script memory location
-
-function x(){
-    const c = 30 // created in local memory of x
-    console.log(c); // 30
+// function statement
+a()
+console.log(b); // error
+function a(){
+    console.log("a is called");
 }
 
-console.log(c); // 100
-x()
+
+// function expression
+
+let b = function(){
+    console.log("b is called");
+}
+
+
+// function declaration
+
+// Anonymous function
+
+// Named function expression
+
+// first class function
+
