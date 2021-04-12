@@ -40,7 +40,23 @@ let v = function x(){
     console.log(x); 
 }
 
-v()
+//v()
 
 // first class function
+
+let k = function xyz(param){
+    console.log(param);
+}
+
+k(function(){
+
+})
+
+function j (){
+console.log("I am j function");;
+}
+
+k(j)
+
+
 
