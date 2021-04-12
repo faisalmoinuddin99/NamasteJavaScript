@@ -29,5 +29,18 @@ var c = function() // --> Anonymous function
 
 // Named function expression
 
+let name = function addName(param){
+    console.log(`my name is ${param}`);
+}
+
+name('faisal')
+// addName() --> Uncaught ReferenceError: addName is not defined
+
+let v = function x(){
+    console.log(x); 
+}
+
+v()
+
 // first class function
 
